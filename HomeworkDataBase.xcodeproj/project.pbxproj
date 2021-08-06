@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A46681126BD74D300AEBC27 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46681026BD74D300AEBC27 /* CoreDataManager.swift */; };
+		6A46681426BD841100AEBC27 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46681326BD841100AEBC27 /* WeatherTableViewController.swift */; };
+		6A46681626BD848D00AEBC27 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46681526BD848D00AEBC27 /* WeatherModel.swift */; };
+		6A46681826BD84B700AEBC27 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46681726BD84B700AEBC27 /* WeatherManager.swift */; };
+		6A46681A26BD8B3500AEBC27 /* RealmWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A46681926BD8B3500AEBC27 /* RealmWeatherModel.swift */; };
+		6A748FF626BD6F2900AB9A13 /* CoreDataTODOTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A748FF526BD6F2900AB9A13 /* CoreDataTODOTableViewController.swift */; };
+		6A8C7A5926BC827D004C2978 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C7A5826BC827D004C2978 /* ToDoModel.swift */; };
+		6A8C7A5B26BC8470004C2978 /* RealmTODOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8C7A5A26BC8470004C2978 /* RealmTODOViewController.swift */; };
 		6AAA231526BC7B17000CE2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA231426BC7B17000CE2C5 /* AppDelegate.swift */; };
 		6AAA231726BC7B17000CE2C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA231626BC7B17000CE2C5 /* SceneDelegate.swift */; };
 		6AAA231926BC7B17000CE2C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA231826BC7B17000CE2C5 /* ViewController.swift */; };
@@ -14,9 +22,20 @@
 		6AAA231F26BC7B17000CE2C5 /* HomeworkDataBase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA231D26BC7B17000CE2C5 /* HomeworkDataBase.xcdatamodeld */; };
 		6AAA232126BC7B19000CE2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAA232026BC7B19000CE2C5 /* Assets.xcassets */; };
 		6AAA232426BC7B19000CE2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAA232226BC7B19000CE2C5 /* LaunchScreen.storyboard */; };
+		6AAA232C26BC7CF0000CE2C5 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA232B26BC7CF0000CE2C5 /* UserDefaultsManager.swift */; };
+		6AAA232F26BC7FBA000CE2C5 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAA232E26BC7FBA000CE2C5 /* RealmManager.swift */; };
+		8FCF795ABAA65EC556A3982B /* Pods_HomeworkDataBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD4C19A1CAB93E0DF0EF856 /* Pods_HomeworkDataBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A46681026BD74D300AEBC27 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6A46681326BD841100AEBC27 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
+		6A46681526BD848D00AEBC27 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		6A46681726BD84B700AEBC27 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		6A46681926BD8B3500AEBC27 /* RealmWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWeatherModel.swift; sourceTree = "<group>"; };
+		6A748FF526BD6F2900AB9A13 /* CoreDataTODOTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTODOTableViewController.swift; sourceTree = "<group>"; };
+		6A8C7A5826BC827D004C2978 /* ToDoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoModel.swift; sourceTree = "<group>"; };
+		6A8C7A5A26BC8470004C2978 /* RealmTODOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTODOViewController.swift; sourceTree = "<group>"; };
 		6AAA231126BC7B17000CE2C5 /* HomeworkDataBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeworkDataBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAA231426BC7B17000CE2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AAA231626BC7B17000CE2C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +45,11 @@
 		6AAA232026BC7B19000CE2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6AAA232326BC7B19000CE2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6AAA232526BC7B19000CE2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AAA232B26BC7CF0000CE2C5 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		6AAA232E26BC7FBA000CE2C5 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B4909F7C25BFBED7A2B81335 /* Pods-HomeworkDataBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeworkDataBase.release.xcconfig"; path = "Target Support Files/Pods-HomeworkDataBase/Pods-HomeworkDataBase.release.xcconfig"; sourceTree = "<group>"; };
+		CBD4C19A1CAB93E0DF0EF856 /* Pods_HomeworkDataBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeworkDataBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1D70777F6AA2E60E110BEBB /* Pods-HomeworkDataBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeworkDataBase.debug.xcconfig"; path = "Target Support Files/Pods-HomeworkDataBase/Pods-HomeworkDataBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +57,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCF795ABAA65EC556A3982B /* Pods_HomeworkDataBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C8B164F45EB55E7660A13E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBD4C19A1CAB93E0DF0EF856 /* Pods_HomeworkDataBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A46681226BD83DC00AEBC27 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A8C7A5A26BC8470004C2978 /* RealmTODOViewController.swift */,
+				6A748FF526BD6F2900AB9A13 /* CoreDataTODOTableViewController.swift */,
+				6AAA231826BC7B17000CE2C5 /* ViewController.swift */,
+				6A46681326BD841100AEBC27 /* WeatherTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6A8C7A5726BC8264004C2978 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A8C7A5826BC827D004C2978 /* ToDoModel.swift */,
+				6A46681526BD848D00AEBC27 /* WeatherModel.swift */,
+				6A46681926BD8B3500AEBC27 /* RealmWeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		6AAA230826BC7B17000CE2C5 = {
 			isa = PBXGroup;
 			children = (
 				6AAA231326BC7B17000CE2C5 /* HomeworkDataBase */,
 				6AAA231226BC7B17000CE2C5 /* Products */,
+				8CBB32E56553FF7F4D5891DE /* Pods */,
+				21C8B164F45EB55E7660A13E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +116,36 @@
 			children = (
 				6AAA231426BC7B17000CE2C5 /* AppDelegate.swift */,
 				6AAA231626BC7B17000CE2C5 /* SceneDelegate.swift */,
-				6AAA231826BC7B17000CE2C5 /* ViewController.swift */,
 				6AAA231A26BC7B17000CE2C5 /* Main.storyboard */,
+				6A46681226BD83DC00AEBC27 /* ViewControllers */,
+				6AAA232D26BC7F9A000CE2C5 /* DataBaseManagers */,
+				6A8C7A5726BC8264004C2978 /* Model */,
 				6AAA232026BC7B19000CE2C5 /* Assets.xcassets */,
 				6AAA232226BC7B19000CE2C5 /* LaunchScreen.storyboard */,
 				6AAA232526BC7B19000CE2C5 /* Info.plist */,
 				6AAA231D26BC7B17000CE2C5 /* HomeworkDataBase.xcdatamodeld */,
+				6A46681726BD84B700AEBC27 /* WeatherManager.swift */,
 			);
 			path = HomeworkDataBase;
+			sourceTree = "<group>";
+		};
+		6AAA232D26BC7F9A000CE2C5 /* DataBaseManagers */ = {
+			isa = PBXGroup;
+			children = (
+				6AAA232B26BC7CF0000CE2C5 /* UserDefaultsManager.swift */,
+				6AAA232E26BC7FBA000CE2C5 /* RealmManager.swift */,
+				6A46681026BD74D300AEBC27 /* CoreDataManager.swift */,
+			);
+			path = DataBaseManagers;
+			sourceTree = "<group>";
+		};
+		8CBB32E56553FF7F4D5891DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1D70777F6AA2E60E110BEBB /* Pods-HomeworkDataBase.debug.xcconfig */,
+				B4909F7C25BFBED7A2B81335 /* Pods-HomeworkDataBase.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AAA232826BC7B19000CE2C5 /* Build configuration list for PBXNativeTarget "HomeworkDataBase" */;
 			buildPhases = (
+				0FCDDF7D7E14F27E7FCE3C59 /* [CP] Check Pods Manifest.lock */,
 				6AAA230D26BC7B17000CE2C5 /* Sources */,
 				6AAA230E26BC7B17000CE2C5 /* Frameworks */,
 				6AAA230F26BC7B17000CE2C5 /* Resources */,
+				78B11A63D0712616A7AA6C6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,15 +215,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FCDDF7D7E14F27E7FCE3C59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeworkDataBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78B11A63D0712616A7AA6C6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeworkDataBase/Pods-HomeworkDataBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeworkDataBase/Pods-HomeworkDataBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeworkDataBase/Pods-HomeworkDataBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AAA230D26BC7B17000CE2C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8C7A5926BC827D004C2978 /* ToDoModel.swift in Sources */,
 				6AAA231926BC7B17000CE2C5 /* ViewController.swift in Sources */,
+				6AAA232C26BC7CF0000CE2C5 /* UserDefaultsManager.swift in Sources */,
 				6AAA231526BC7B17000CE2C5 /* AppDelegate.swift in Sources */,
+				6A46681A26BD8B3500AEBC27 /* RealmWeatherModel.swift in Sources */,
+				6A46681826BD84B700AEBC27 /* WeatherManager.swift in Sources */,
+				6A748FF626BD6F2900AB9A13 /* CoreDataTODOTableViewController.swift in Sources */,
+				6A46681426BD841100AEBC27 /* WeatherTableViewController.swift in Sources */,
 				6AAA231F26BC7B17000CE2C5 /* HomeworkDataBase.xcdatamodeld in Sources */,
 				6AAA231726BC7B17000CE2C5 /* SceneDelegate.swift in Sources */,
+				6A8C7A5B26BC8470004C2978 /* RealmTODOViewController.swift in Sources */,
+				6A46681126BD74D300AEBC27 /* CoreDataManager.swift in Sources */,
+				6A46681626BD848D00AEBC27 /* WeatherModel.swift in Sources */,
+				6AAA232F26BC7FBA000CE2C5 /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +419,7 @@
 		};
 		6AAA232926BC7B19000CE2C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1D70777F6AA2E60E110BEBB /* Pods-HomeworkDataBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +439,7 @@
 		};
 		6AAA232A26BC7B19000CE2C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4909F7C25BFBED7A2B81335 /* Pods-HomeworkDataBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
