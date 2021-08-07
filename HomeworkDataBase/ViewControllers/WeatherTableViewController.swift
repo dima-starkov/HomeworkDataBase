@@ -11,30 +11,38 @@ class WeatherTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        WeatherManager.shared.fetchData()
+        WeatherManager.shared.fetchData { weather in
+                RealmManager.saveWeahter(weather)
+            RealmManager.weatherArray = realm.objects(Weather.self)
+            print(RealmManager.weatherArray ?? "нет данных")
+        }
     }
+    
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+            return 1 //RealmManager.weatherArray.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath)
+//        let weatherData = RealmManager.weatherArray[indexPath.row]
+//        
+//        cell.textLabel?.text = weatherData.date
+//        cell.detailTextLabel?.text = "\(weatherData.temp)"
+//        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

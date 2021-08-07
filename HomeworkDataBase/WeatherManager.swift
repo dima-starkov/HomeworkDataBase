@@ -36,12 +36,17 @@ class WeatherManager {
     
     }
     
-    func fetchData() {
+    func fetchData(completion: @escaping ([Weather]) -> ()) {
         loadWeather { result in
             switch result{
             case .success(let model):
                 
-                print(model)
+                let data = model.list.compactMap { list in
+                    Weather(date: list.dt_txt, temp: list.main["temp"] ?? 0.0)
+                }
+                
+            completion(data)
+            
                 
             case.failure(let error):
                 print(error)

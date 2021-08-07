@@ -10,9 +10,9 @@ import RealmSwift
 
 class Weather: Object {
     @objc dynamic var date = ""
-    @objc dynamic var temp = ""
+    @objc dynamic var temp = 0.0
     
-    convenience init(date: String,temp: String) {
+    convenience init(date: String,temp: Double) {
         self.init()
         self.date = date
         self.temp = temp
