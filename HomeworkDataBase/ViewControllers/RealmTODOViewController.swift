@@ -11,8 +11,7 @@ class RealmTODOViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        RealmManager.todoArray = realm.objects(ToDo.self)
-        
+            RealmManager.shared.todoArray = realm.objects(ToDo.self)
     }
     
     @IBAction func addAction(_ sender: UIBarButtonItem) {
@@ -28,7 +27,7 @@ class RealmTODOViewController: UITableViewController {
         let save = UIAlertAction(title: "Сохранить", style: .default) { action in
             guard let text = alertTF.text , !text.isEmpty else {return}
            let newToDo = ToDo(name: text, isDone: false)
-            RealmManager.saveObject(newToDo)
+            RealmManager.shared.saveObject(newToDo)
             self.tableView.reloadData()
         }
         
@@ -41,12 +40,12 @@ class RealmTODOViewController: UITableViewController {
     //MARK:- TableView
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return RealmManager.todoArray.isEmpty ? 0 : RealmManager.todoArray.count
+        return RealmManager.shared.todoArray.isEmpty ? 0 : RealmManager.shared.todoArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell",for: indexPath)
-        let toDo = RealmManager.todoArray[indexPath.row]
+        let toDo = RealmManager.shared.todoArray[indexPath.row]
         cell.textLabel?.text = toDo.name
         if toDo.isDone {
             cell.accessoryType = .checkmark
@@ -58,20 +57,20 @@ class RealmTODOViewController: UITableViewController {
 
    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
        if editingStyle == .delete {
-        let toDo = RealmManager.todoArray[indexPath.row]
-           RealmManager.deleteObject(toDo)
+        let toDo = RealmManager.shared.todoArray[indexPath.row]
+        RealmManager.shared.deleteObject(toDo)
            tableView.deleteRows(at: [indexPath], with: .left)
        }
    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let toDo = RealmManager.todoArray[indexPath.row]
+        let toDo = RealmManager.shared.todoArray[indexPath.row]
         if toDo.isDone {
             tableView.cellForRow(at: indexPath)?.accessoryType = .none
         } else {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
-        RealmManager.editObject(toDo: toDo, isDone: !toDo.isDone)
+        RealmManager.shared.editObject(toDo: toDo, isDone: !toDo.isDone)
     }
    
 

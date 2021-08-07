@@ -8,14 +8,15 @@
 import UIKit
 
 class WeatherTableViewController: UITableViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         WeatherManager.shared.fetchData { weather in
-                RealmManager.saveWeahter(weather)
-            RealmManager.weatherArray = realm.objects(Weather.self)
-            print(RealmManager.weatherArray ?? "нет данных")
+            RealmManager.shared.saveWeahter(weather)
         }
+            RealmManager.shared.weatherArray = realm.objects(Weather.self)
     }
     
     
@@ -28,17 +29,18 @@ class WeatherTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1 //RealmManager.weatherArray.count
+        return RealmManager.shared.weatherArray.count
+           
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell", for: indexPath)
-//        let weatherData = RealmManager.weatherArray[indexPath.row]
-//        
-//        cell.textLabel?.text = weatherData.date
-//        cell.detailTextLabel?.text = "\(weatherData.temp)"
-//        
+        let weatherData = RealmManager.shared.weatherArray[indexPath.row]
+
+        cell.textLabel?.text = weatherData.date
+        cell.detailTextLabel?.text = "\(weatherData.temp)"
+
 
         return cell
     }
