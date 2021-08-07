@@ -13,10 +13,14 @@ class WeatherTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         WeatherManager.shared.fetchData { weather in
             RealmManager.shared.saveWeahter(weather)
         }
             RealmManager.shared.weatherArray = realm.objects(Weather.self)
+        
     }
     
     
@@ -39,8 +43,7 @@ class WeatherTableViewController: UITableViewController {
         let weatherData = RealmManager.shared.weatherArray[indexPath.row]
 
         cell.textLabel?.text = weatherData.date
-        cell.detailTextLabel?.text = "\(weatherData.temp)"
-
+        cell.detailTextLabel?.text = "\(weatherData.temp) °C"
 
         return cell
     }
